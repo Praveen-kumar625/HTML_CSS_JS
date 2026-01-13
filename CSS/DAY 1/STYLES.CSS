@@ -1,0 +1,102 @@
+/* KYA H CSS */
+
+
+/* css stand from cascading style sheets  */
+
+
+/* types of css
+1. inline css
+2. internal css
+3. external css */
+
+
+/* selector 
+1. id selector
+2. class selector
+3. element selector 
+4. pseudo selector  
+5. attribute selector 
+6. name selector 
+7. universal selector 
+8. pseudo-element selector 
+9. combinator selector */
+
+
+/* def between id and class selector
+1. id selector is used to select an element with a specific id attribute
+2. class selector is used to select elements with a specific class attribute */
+
+
+/*font size
+1. px - pixels
+2. em - relative to the font-size of the element
+3. rem - relative to the font-size of the root element
+4. % - relative to the parent elements font size
+5. vw - relative to 1% of the width of the viewport
+6. vh - relative to 1% of the height of the viewport
+7. vmin - relative to 1% of the viewport's smaller dimension
+/* 8. vmax - relative to 1% of the viewport's larger dimension */
+
+
+/* <style>
+/* element selector */
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+
+/* class selector */
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/* id selector */
+
+#main-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* pseudo selector */
+
+a:hover {
+    color: red;
+}
+
+
+/* attribute selector */
+
+input[type="text"] {
+    border: 1px solid black;
+}
+
+
+/* universal selector */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* font example */
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* use of font-size */
+
+p {
+    font-size: 16px;
+}
+
+</style>*/

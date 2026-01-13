@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- css -->
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</body>
+
+</html>
+
+<!-- form  tags  -->
+<!--1. form - ye tag form banane ke liye use hota hai jisme user input deta hai.-->
+<!--2. label - ye tag input field ke liye label banata hai jisse user ko pata chale ki wo kya input de raha hai.-->
+<!--3. input - ye tag user se data lene ke liye use hota hai. iske alag-alag type hote hain jaise text, email, number, password, etc.-->
+<!--4. textarea - ye tag multi-line text input ke liye use hota hai.-->
+<!--5. select - ye tag drop-down list banane ke liye use hota hai jisme user ek option select kar sakta hai.-->
+<!--6. option - ye tag select tag ke andar use hota hai jisme alag-alag options define kiye jate hain.-->
+<!--7. button - ye tag button banane ke liye use hota hai jisse user koi action perform kar sakta hai.-->
+<!--8. fieldset - ye tag form ke related fields ko group karne ke liye use hota hai.-->
+<!--9. legend - ye tag fieldset ke andar use hota hai jisme group ka title diya jata hai.-->
+<!--10. action - ye attribute form tag ke andar use hota hai jisme form submit hone par data kaha bhejna hai wo define kiya jata hai.-->
+<!--11. method - ye attribute form tag ke andar use hota hai jisme form data bhejne ka tarika define kiya jata hai, jaise GET ya POST.-->
+<!--12. enctype - ye attribute form tag ke andar use hota hai jisme form data ka encoding type define kiya jata hai, jaise multipart/form-data file upload ke liye.-->
+<!--13. autocomplete - ye attribute input tag ke andar use hota hai jisme browser ko suggest karne ke liye kaha jata hai ki wo pehle se saved data ko use kare.-->
+<!--14. placeholder - ye attribute input tag ke andar use hota hai jisme input field ke andar ek hint diya jata hai ki user kya input de sakta hai.-->
+<!--15. required - ye attribute input tag ke andar use hota hai jisme bataya jata hai ki ye field bharna zaroori hai.-->
+<!--16. readonly - ye attribute input tag ke andar use hota hai jisme bataya jata hai ki ye field sirf padhne ke liye hai aur user isme kuch change nahi kar sakta.-->
+<!--17. disabled - ye attribute input tag ke andar use hota hai jisme bataya jata hai ki ye field disable hai aur user isme kuch input nahi de sakta.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- creating form using all tags  -->
+    <form>
+        <label>
+            Name: <input type="text" name="name" placeholder="Enter your name" required>
+        </label> <br><br>
+        <label>
+            Email: <input type="email" name="email" placeholder="Enter your email" required>
+        </label> <br><br>
+        <label>
+            Age: <input type="number" name="age" placeholder="Enter your age">
+        </label> <br><br>
+        <label>
+            kha se ho bhai:
+            <select name="location">
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+
+            </label><br><br>
+        <label>
+            kya kam karte ho bhai:
+            <textarea name="occupation" placeholder="Enter your occupation"></textarea>
+        </label><br><br>
+    </form>
+    </button type="submit">Submit</button>
+</body>
+
+</html>

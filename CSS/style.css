@@ -1,0 +1,31 @@
+                                                * {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    box-sizing: border-box;
+                                                }
+                                                
+                                                #parent {
+                                                    width: 400px;
+                                                    height: 400px;
+                                                    background-color: lightblue;
+                                                    position: relative;
+                                                }
+                                                
+                                                #box {
+                                                    width: 100px;
+                                                    height: 100px;
+                                                    background-color: coral;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    scale: 50px;
+                                                }
+                                                
+                                                #box:hover {
+                                                    background-color: lightgreen;
+                                                }
+                                                
+                                                #box:active {
+                                                    background-color: orange;
+                                                }

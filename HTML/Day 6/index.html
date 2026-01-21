@@ -1,0 +1,59 @@
+<!-- flex box -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        #parent div {
+            height: 100px;
+            width: 100px;
+        }
+        
+        #parent div:nth-of-type(1) {
+            background-color: red;
+        }
+        
+        #parent div:nth-of-type(2) {
+            background-color: green;
+        }
+        
+        #parent div:nth-of-type(3) {
+            background-color: blue;
+        }
+        
+        #parent div:nth-of-type(4) {
+            background-color: yellow;
+        }
+        
+        #parent {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            background-color: rgb(22, 210, 210);
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-duration: 5s;
+            animation: forwards;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex Box</h2>
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

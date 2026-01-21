@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ANIMATION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .ball {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            display: flex;
+            background-color: #e1530776;
+            border-radius: 50%;
+            justify-content: space-around;
+            align-items: center;
+            animation-direction: alternate;
+            animation-name: bounce;
+            animation-duration: 800ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            box-shadow: 0 0 10px rgb(231, 4, 4);
+        }
+        
+        .ball:hover {
+            animation: bounce 0.5s infinite;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(85vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ar>PRAVEEN KUMAR JAYSWAL
+
+    </ar>
+    <div class="ball">
+    </div>
+</body>
+
+</html>

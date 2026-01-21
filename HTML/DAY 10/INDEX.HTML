@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px;
+            gap: 1px;
+            height: 100vh;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        
+        .child {
+            background-color: #4caf50;
+            color: white;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(4, 104, 167, 0.666);
+        }
+        
+        .child img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            transition: 0.5s ease-in;
+        }
+        
+        #one {
+            background-color: #4caf50;
+        }
+        
+        #two {
+            background-color: #130b89df;
+        }
+        
+        #three {
+            background-color: #4469d1;
+        }
+        
+        #four {
+            background-color: #0a0acc9b;
+        }
+        
+        #five {
+            background-color: #0a2bab7f;
+        }
+        
+        #six {
+            background-color: #0000ff60;
+        }
+        
+        #seven {
+            background-color: #1d059341;
+        }
+        
+        #eight {
+            background-color: #4a5ac343;
+        }
+        
+        #nine {
+            background-color: #2204a631;
+        }
+        
+        #ten {
+            background-color: #2000d40b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- img grid---->
+    <div class="parent">
+        <div class="child" id="one"><img src="https://unsplash.com/photos/dry-grass-and-weeds-in-a-field-DSp2supx5ck" alt=" 1"></div>
+        <div class="child" id="two"><img src="https://unsplash.com/photos/woman-taking-a-picture-of-the-statue-of-liberty-ZTxIYc3YILI" alt=" 2"></div>
+        <div class="child" id="three"><img src="https://unsplash.com/photos/man-standing-on-another-man-in-the-snow-MXMMYEUv0yI" alt=" 3"></div>
+        <div class="child" id="four"><img src="https://unsplash.com/photos/red-trolley-car-driving-down-a-tree-lined-street-1w3tO5F8HYY" alt=" 4"></div>
+        <div class="child" id="five"><img src="https://unsplash.com/photos/a-white-vintage-car-parked-on-a-street-C12GcEbPIfE" alt=" 5"></div>
+        <div class="child" id="six"><img src="https://unsplash.com/photos/narrow-street-in-a-traditional-japanese-town-at-night-3sGqa8YJIXg" alt=" 6"></div>
+        <div class="child" id="seven"><img src="https://unsplash.com/photos/restaurant-dining-tables-set-for-service-_vIwzh9anNg" alt=" 7"></div>
+        <div class="child" id="eight"><img src="https://unsplash.com/photos/a-modern-chair-with-a-cane-back-and-black-seat-x5BiykABWC0" alt=" 8"></div>
+        <div class="child" id="nine"><img src="https://unsplash.com/photos/a-modern-chair-with-a-cane-back-and-black-seat-x5BiykABWC0" alt=" 9"></div>
+        <div class="child" id="ten"><img src="https://unsplash.com/photos/small-building-under-the-milky-way-galaxy-R802s3oe82M" alt=" 10"></div>
+    </div>
+
+
+
+</body>
+
+</html>

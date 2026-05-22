@@ -1,0 +1,95 @@
+/* style.css */
+/* Author: Praveen kumar */
+:root {
+  --primary-color: darkblue;
+  --bg-color: #f2f2f2;
+  --white: #ffffff;
+  --delete-color: #e74c3c;
+  --input-focus: #dff9fb;
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  background-color: var(--delete-color);
+  margin-left: 10px;
+}
+
+#liveText {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}

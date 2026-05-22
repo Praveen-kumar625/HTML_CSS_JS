@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event & Todo List | By Praveen kumar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>DOM Practice</h1>
+        </header>
+
+        <!-- INPUT EVENT SECTION -->
+        <section>
+            <h2>Input Event Example</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <p id="liveText">Typing will appear here...</p>
+        </section>
+
+        <hr>
+
+        <!-- TODO LIST SECTION -->
+        <section>
+            <h2>Todo List</h2>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="todoInput" placeholder="Enter Todo">
+                <button id="addBtn">Add</button>
+            </div>
+            <ul id="todoList">
+                <!-- Javascript se li elements aayenge -->
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

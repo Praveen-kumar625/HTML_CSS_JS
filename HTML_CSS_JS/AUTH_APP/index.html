@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System | By Praveen kumar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        
+        <!-- Signup Section -->
+        <section id="signupSection">
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <span class="toggle-link" id="toggleToLogin">Already have an account? Login</span>
+        </section>
+
+        <!-- Login Section -->
+        <section id="loginSection" class="hide">
+            <h2>Welcome Back</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <span class="toggle-link" id="toggleToSignup">New user? Create an account</span>
+        </section>
+
+        <!-- Profile Section (After Login) -->
+        <section id="profileSection" class="profile-container hide">
+            <h2 id="userName">Welcome!</h2>
+            <h3 id="userEmail">Email</h3>
+            <button id="logoutBtn" style="background-color: #e74c3c;">Logout</button>
+        </section>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

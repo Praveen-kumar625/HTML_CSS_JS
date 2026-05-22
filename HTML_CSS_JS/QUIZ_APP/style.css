@@ -1,0 +1,182 @@
+/* style.css */
+/* Author: Praveen kumar */
+
+/* CSS variables for consistent colors aur aesthetics */
+:root {
+  --primary-color: #1e3c72;
+  --secondary-color: #2a5298;
+  --bg-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  --white: #ffffff;
+  --text-dark: #333333;
+  --text-light: #888888;
+  --light-bg: #f0f4ff;
+  --correct-bg: #d4edda;
+  --correct-border: #28a745;
+  --correct-text: #155724;
+  --wrong-bg: #f8d7da;
+  --wrong-border: #dc3545;
+  --wrong-text: #721c24;
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  --border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Container - Glassmorphism effect ka touch diya gaya hai */
+.quiz-container {
+  background: var(--white);
+  width: 100%;
+  max-width: 550px;
+  border-radius: var(--border-radius);
+  padding: 35px;
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Top bar jisme score aur timer hai */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  background: var(--light-bg);
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.timer {
+  color: var(--wrong-border);
+}
+
+.question-num {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.question {
+  font-size: 19px;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option {
+  padding: 14px 18px;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: left;
+  transition: all 0.3s;
+  color: var(--text-dark);
+}
+
+.option:hover:not(:disabled) {
+  background: #e8eeff;
+  border-color: var(--secondary-color);
+  transform: translateX(5px);
+}
+
+.option.correct {
+  background: var(--correct-bg);
+  border-color: var(--correct-border);
+  color: var(--correct-text);
+}
+
+.option.wrong {
+  background: var(--wrong-bg);
+  border-color: var(--wrong-border);
+  color: var(--wrong-text);
+}
+
+.option:disabled {
+  cursor: not-allowed;
+}
+
+#nextBtn, #restartBtn {
+  width: 100%;
+  padding: 13px;
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#nextBtn:hover {
+  background: var(--primary-color);
+}
+
+#nextBtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#restartBtn {
+  background: var(--correct-border);
+}
+
+#restartBtn:hover {
+  background: #218838;
+}
+
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  color: var(--secondary-color);
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.result .final-score {
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.result p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}

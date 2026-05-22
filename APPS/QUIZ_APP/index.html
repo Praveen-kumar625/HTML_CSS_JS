@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - Production Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <h1>Quiz Master</h1>
+            <p>Challenge your web development knowledge.</p>
+            <button id="start-btn">Begin Challenge</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hidden">
+            <header>
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <div class="stats-bar">
+                    <div class="stat">Question: <span id="current-q-num">1</span>/<span id="total-q-num">5</span></div>
+                    <div class="stat timer">Time: <span id="timer">15</span>s</div>
+                </div>
+            </header>
+
+            <main>
+                <h2 id="question-text" class="question"></h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Options injected here -->
+                </div>
+            </main>
+
+            <footer>
+                <button id="next-btn" disabled>Next Question</button>
+            </footer>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen hidden">
+            <div class="result-card">
+                <h2>Challenge Complete!</h2>
+                <div class="score-display">
+                    <span id="final-score" class="big-score">0</span>
+                    <span class="total-q">/ <span id="result-total">5</span></span>
+                </div>
+                <p id="feedback-msg"></p>
+                <button id="restart-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

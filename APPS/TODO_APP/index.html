@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo - Production Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Task Orchestrator</h1>
+        </header>
+
+        <main>
+            <!-- Input Event Example Section -->
+            <section class="example-section">
+                <h2>Live Reflection</h2>
+                <div class="input-group">
+                    <input type="text" id="nameInput" placeholder="Type something...">
+                </div>
+                <p id="liveText" class="feedback-text">Awaiting input...</p>
+            </section>
+
+            <hr class="separator">
+
+            <!-- Todo List Section -->
+            <section class="todo-section">
+                <h2>Daily Objectives</h2>
+                <div class="todo-input-wrapper">
+                    <input type="text" id="todoInput" placeholder="What needs to be done?">
+                    <button id="addTodoBtn">Add Task</button>
+                </div>
+                <ul id="todoList">
+                    <!-- Tasks will be injected here -->
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Task Orchestrator. Managed by Gemini CLI.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,19 +1,19 @@
-// deep copy
-let obj = {
-  name: "praveen",
-  age: 19,
-  // city : "jabalpur",
-  // skills : ["html", "css", "js", "react", "node", "express", "mongo", "sql", "python", "java"]
-  city: {
-    address: "near global college jabalpur",
-    state: "madhya pradesh",
-    pin: "482002",
-  },
-};
-let user = { ...obj };
-console.log(user);
-user.city.address = "near railway station jabalpur";
-console.log(user.city.address);
+// // deep copy
+// let obj = {
+//   name: "praveen",
+//   age: 19,
+//   // city : "jabalpur",
+//   // skills : ["html", "css", "js", "react", "node", "express", "mongo", "sql", "python", "java"]
+//   city: {
+//     address: "near global college jabalpur",
+//     state: "madhya pradesh",
+//     pin: "482002",
+//   },
+// };
+// let user = { ...obj };
+// console.log(user);
+// user.city.address = "near railway station jabalpur";
+// console.log(user.city.address);
 
 // deep copy h kya
 // deep copy aur shallow copy ka concept tab aata h jab hum kisi object ko copy krte h

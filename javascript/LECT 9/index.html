@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <fieldset><legend>QUIZ TIME</legend>
+    <div class "parent" id= "quiz">
+        <div class="child">
+            <div class="quiz-header">
+            <h2 id="question">Sawal</h2>
+            <div id="timer">Ab time bacha h: <span id="time">15</span>s</div>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">D</label>
+                </li>
+            </ul>
+        </div>
+        <!-- Submit  button quiz check karne ke liye -->
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

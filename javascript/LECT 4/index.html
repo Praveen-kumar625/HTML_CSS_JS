@@ -1,0 +1,39 @@
+<!--  image illustration  -->
+<!-- CALLBACK HELL -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function step1(fn) {
+            setTimeout(() => {
+                console.log("ram");
+                fn();
+            }, 1000);
+        }
+
+        function step2(fn) {
+            setTimeout(() => {
+                console.log("shyam");
+                fn();
+            }, 1000);
+        }
+
+        function step3(fn) {
+            setTimeout(() => {
+                console.log("Shona");
+                fn();
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
+<!--callback hell ek aisa nested loop h callbacks ka jha pe multiple callbacks h  -->

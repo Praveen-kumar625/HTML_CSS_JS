@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN SIGNUP PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        h1 { font-size: 2rem; font-weight: 600; color: var(--text-main); }
+        p.desc { color: var(--text-muted); margin-top: 8px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 32px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        h2 { font-size: 1.25rem; margin-bottom: 24px; font-weight: 600; }
+
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 6px; }
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9375rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input:focus { border-color: var(--primary); }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover { background: var(--primary-hover); }
+
+        .data-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.875rem;
+        }
+
+        th { font-weight: 600; color: var(--text-muted); }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: #f1f5f9; }
+
+        @media (max-width: 850px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User LOGIN SIGNUP PAGE</h1>
+            <p class="desc">LOGIN SIGNUP PAGE</p>
+        </header>
+
+        <div class="grid">
+            <!-- Signup Form -->
+            <div class="card">
+                <h2> New User</h2>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Praveen kumar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="praveenjayswal625@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit">SIGNUP</button>
+                </form>
+            </div>
+             <!-- LOGIN FORM  -->
+            <div class="card">
+                <h2>LOGIN User</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="praveenjayswal625@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>  
+
+            <!-- Data Display -->
+            <div class="card data-section">
+                <h2>ALL Users</h2>
+                <div id="userListContainer">
+                   
+                </div>
+                <div class="actions">
+                    <button id="fetchDataBtn" class="btn-secondary"> List</button>
+                    <button id="clearDataBtn" style="background: #ef4444;">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let signupForm = document.querySelector("#signupForm");
+        signupForm.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            console.log("submitted");
+            let userData={
+                name:signupForm[0].value,
+                email:signupForm[1].value,
+                password:signupForm[2].value,
+            }
+            localStorage.setItem("userData",JSON.stringify(userData));
+            alert("signup successful");
+            signupForm.reset();
+            let loginForm = document.querySelector("#loginForm");
+            loginForm.addEventListener("submit",(e)=>{
+                e.preventDefault();
+                console.log("submitted");
+                let loginData={
+                    email:loginForm[0].value,
+                    password:loginForm[1].value,
+                }
+               if(loginData.email===userData.email && loginData.password===userData.password){
+                alert("login successful");
+                loginForm.reset();
+                window.location.href="welcome.html";
+               }    
+               else{
+                alert("galti se mistake ho gayi re baba....");
+               }
+            }   )
+      
+    </script>       
+</body>
+</html>

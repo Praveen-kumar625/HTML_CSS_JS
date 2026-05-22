@@ -18,3 +18,4 @@ let user={
 }
 
 obj.fullname.call(user);
+obj.fullname.apply(user,["jabalpur"])

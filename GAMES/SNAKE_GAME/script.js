@@ -1,6 +1,6 @@
 /**
- * Snake Master - Production Grade Logic
- * Refactored from web_4thSem reference
+ * Snake Master -  Logic
+ trainer = RUPESH sir
  */
 
 // Configuration Constants

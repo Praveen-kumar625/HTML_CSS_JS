@@ -1,0 +1,25 @@
+{
+  "name": "frontend-mastery-portfolio",
+  "version": "1.0.0",
+  "description": "A curated collection of production-ready web applications, UI components, and games built with modern HTML, CSS, and Vanilla JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,jsx,json,md}\"",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend",
+    "portfolio",
+    "javascript",
+    "html",
+    "css",
+    "vanilla-js",
+    "showcase"
+  ],
+  "author": "Praveen Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
